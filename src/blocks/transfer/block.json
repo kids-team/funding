@@ -1,0 +1,11 @@
+{
+	"name": "funding/transfer",
+	"api_version": 2,
+	"category": "widgets",
+	"attributes": {
+		"preview": {
+			"type": "boolean",
+			"default": false
+		}
+	}
+}

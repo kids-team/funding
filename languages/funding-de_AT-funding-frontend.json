@@ -1,0 +1,49 @@
+{
+	"domain": "funding",
+	"locale_data": {
+		"messages": {
+			"": {
+				"domain": "messages",
+				"plural_forms": "nplurals=2; plural=(n != 1);",
+				"lang": "de_AT"
+			},
+			"Your Country": [
+				"Dein Land"
+			],
+			"Select Country": [
+				"Land wählen"
+			],
+			"Project": [
+				"Projekt"
+			],
+			"Select the country you are donating from.": [
+				"Wähle das Land aus, von dem aus du spenden möchtest. Wir können Dir dann eine Quittung für dein Finanzamt ausstellen."
+			],
+			"Amount": [
+				"Betrag"
+			],
+			"IBAN": [
+				"IBAN"
+			],
+			"BIC": [
+				"BIC"
+			],
+			"Bank": [
+				"Kreditinstitut"
+			],
+			"Beneficial": [
+				"Begünstigter"
+			],
+			"Purpose": [
+				"Verwendungszweck"
+			],
+			"Scan to pay": [
+				"Mit Bank-App scannen"
+			],
+			"Show Data": [
+				"Überweisungsdaten anzeigen"
+			]
+
+		}
+	}
+}

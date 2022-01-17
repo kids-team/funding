@@ -1,0 +1,16 @@
+{
+    "name": "contexis/funding",
+    "description": "Wordpress plugin for funding",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thomas Gollenia",
+            "email": "thomas@gollenia.at"
+        }
+    ],
+    "require": {
+        "smhg/sepa-qr-data": "^1.1",
+        "chillerlan/php-qrcode": "dev-main#06730361508c283a02bbf9cbc9e4b55e7b3bc88b"
+    }
+}
