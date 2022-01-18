@@ -170,6 +170,7 @@ class Projects {
 		$args = [
 			'post_type' => 'ctx-project',
 			'p' => $id, 
+			'per_page' => -1
 		];
 
 		$query = new \WP_Query($args);
