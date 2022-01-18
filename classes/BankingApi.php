@@ -15,6 +15,8 @@ class BankingApi {
         $instance = new self;
 		add_action('wp_ajax_nopriv_funding_qr_code',[$instance, 'generate_qr_code']);
 		add_action('wp_ajax_nopriv_funding_payment_info',[$instance, 'get_payment_info']);
+		add_action('wp_ajax_funding_qr_code',[$instance, 'generate_qr_code']);
+		add_action('wp_ajax_funding_payment_info',[$instance, 'get_payment_info']);
         
     }
 
