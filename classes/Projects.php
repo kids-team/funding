@@ -147,6 +147,7 @@ class Projects {
 			'orderby' => 'menu_order title', 
 			'order' => 'ASC',
 			'fields' => ['id', 'meta'],
+			'posts_per_page' => -1
 		];
 
 		$query = new \WP_Query($args);
