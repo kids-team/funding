@@ -672,7 +672,7 @@ class Start
                                            ''); ?>"
                                    style="width: 100%">
                         </div>
-                        <div class="input">
+                        <div class="input input--half">
                             <label for="dmm_zipcode"><?php echo esc_html_e('Zipcode', 'funding') .
                                                                 (isset($dmm_fields['Address']['required']) &&
                                                                  $dmm_fields['Address']['required'] ?
@@ -685,7 +685,7 @@ class Start
                                            ''); ?>"
                                    style="width: 100%">
                         </div>
-                        <div class="input">
+                        <div class="input input--half">
                             <label for="dmm_city"><?php echo esc_html_e('City', 'funding') .
                                                              (isset($dmm_fields['Address']['required']) &&
                                                               $dmm_fields['Address']['required'] ?
