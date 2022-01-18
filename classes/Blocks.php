@@ -16,7 +16,7 @@ class Blocks {
 		$instance->dmm = $dmm;
 		add_action('init', [$instance, "register_assets"]);
 		add_action('init', [$instance, "register_blocks"]);
-		add_action('admin_enqueue_scripts', [$instance, "add_admin_script"]);
+		//add_action('admin_enqueue_scripts', [$instance, "add_admin_script"]);
 	}
 
 	public function register_assets() {
@@ -65,7 +65,7 @@ class Blocks {
 	}
 
 	public function add_admin_script() {
-	wp_enqueue_script('ctx-block-filter', plugin_dir_url(__FILE__) . "../assets/admin.js", [], false, true);
+		//wp_enqueue_script('ctx-block-filter', plugin_dir_url(__FILE__) . "../assets/admin.js", [], false, true);
 	}
 
 	public function register_blocks() {
