@@ -28,15 +28,14 @@ class BankingApi {
 	 * @return void
 	 */
     public function generate_qr_code() {
-		//if(empty($_REQUEST['country']) || empty($_REQUEST['project'])) return;
-		$country = Countries::find($_REQUEST['country']);
-		$project = Projects::find($_REQUEST['project']);
-		
+		if(empty($_REQUEST['country']) || empty($_REQUEST['project'])) return;
+		$data = $this->get_data();
+
 		$paymentData = Data::create()
-			->setName($country['beneficiary'])
-			->setIban($country['iban'])
-			->setRemittanceText($country['ref-pre'] . ($country['reference'] == "number" ? $project['number'] : $project['name']) . $country['ref-suf'])
-			->setAmount($_REQUEST['amount'] ?? 10);
+			->setName($data['beneficiary'])
+			->setIban($data['iban'])
+			->setRemittanceText($data['purpose'])
+			->setAmount($_REQUEST['amount'] ?? 25);
 
 		$qrOptions = new QROptions([
 			'version' => 7,
@@ -50,6 +49,7 @@ class BankingApi {
 			'outputType' => QRCode::OUTPUT_MARKUP_SVG,
 			'svgConnectPaths' => true
 		]);
+		
 		$result = new QRCode($qrOptions);
 		header('Content-Type: image/svg+xml');
 		echo $result->render($paymentData);
@@ -65,23 +65,47 @@ class BankingApi {
 	 */
 	public function get_payment_info() {
 		if(empty($_REQUEST['country']) || empty($_REQUEST['project'])) return;
-		$country = Countries::find($_REQUEST['country']);
-		$project = Projects::find($_REQUEST['project']);
-		$prefix = $country['ref-pre'] ? $country['ref-pre'] . "-" : "";
-		$suffix = $country['ref-suf'] ? "-" . $country['ref-suf'] : "";
+		$data = $this->get_data();
+
 		$result = [
 			"result" => true,
-			"purpose" => $prefix . ($country['reference'] == "number" ? $project['number'] : $project['name']) . $suffix,
-			"iban" => $country['iban'],
-			"beneficiary" => $country['beneficiary'],
-			"bic" => $country['bic'],
-			"bank" => $country['bank'],
-			"amount" => $_REQUEST['amount'] ?? 10
+			"purpose" => $data['purpose'],
+			"iban" => $data['iban'],
+			"beneficiary" => $data['beneficiary'],
+			"bic" => $data['bic'],
+			"bank" => $data['bank'],
+			"amount" => $_REQUEST['amount'] ?? 25,
+			"_full" => $data
 		];
 
 		header('Content-Type: application/json');
 		echo json_encode($result);
 		wp_die();
+	}
+
+	/**
+	 * Collect payment data depending on Country and project settings
+	 *
+	 * @return array
+	 */
+	public function get_data() {
+		$country = Countries::find($_REQUEST['country']);
+		$project = Projects::find($_REQUEST['project']);
+
+		$exception = $project['exception'] == 0 || $project['exception'] == $country['ID'];
+		$reference = $project['reference'] && $exception ? $project['reference'] : $country['reference'];
+		$prefix = $project['prefix'] && $exception ? $project['prefix'] : $country['prefix'];
+		$suffix = $project['suffix'] && $exception ? $project['suffix'] : $country['suffix'];
+		return [
+			"iban" => $project['iban'] && $exception ? $project['iban'] : $country['iban'],
+			"bic" => $project['bic'] && $exception ? $project['bic'] : $country['bic'],
+			"beneficiary" => $project['beneficiary'] && $exception ? $project['beneficiary'] : $country['beneficiary'],
+			"bank" => $project['bank'] && $exception ? $project['bank'] : $country['bank'],
+			"purpose" => $prefix . ($reference == "number" ? $project['number'] : $project['name']) . $suffix,
+			"exception" => $exception,
+			"project" => $project,
+			"country" => $country
+		];
 	}
 }
 

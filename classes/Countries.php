@@ -138,11 +138,15 @@ class Countries {
 
 	}
 
-	public static function find($id) {
+
+	public static function find($id = 0) {
 		$args = [
 			'post_type' => 'ctx-country',
-			'p' => $id, 
 		];
+
+		if($id) {
+			$args['p'] = $id;
+		}
 
 		$query = new \WP_Query($args);
 
@@ -156,12 +160,14 @@ class Countries {
 				"bank" => get_post_meta($post->ID, 'bank', true),
 				"beneficiary" => get_post_meta($post->ID, 'beneficiary', true),
 				"reference" => get_post_meta($post->ID, 'reference', true),
-				"ref-pre" => get_post_meta($post->ID, 'ref-pre', true),
-				"ref-suf" => get_post_meta($post->ID, 'ref-suf', true)
+				"prefix" => get_post_meta($post->ID, 'ref-pre', true),
+				"suffix" => get_post_meta($post->ID, 'ref-suf', true)
 			];
 		}, $query->posts);
 
-		return $result[0];
+		if($id) return $result[0];
+
+		return $result;
 	}
 
 

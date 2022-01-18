@@ -756,3 +756,12 @@ msgstr "Land bearbeiten"
 
 msgid "Create new Country"
 msgstr "Neues Land anlegen"
+
+msgid "Use exception for"
+msgstr "Ausnahme verwenden für"
+
+msgid "All"
+msgstr "Alle"
+
+msgid "Project Banking"
+msgstr "Bankverbindung"

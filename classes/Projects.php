@@ -59,6 +59,14 @@ class Projects {
 			'ctx-project',
 			'normal'
         ); 
+
+		add_meta_box(
+			'ctx_project_banking',
+			__( 'Project Banking', 'funding' ),
+			[$this, 'metabox_banking'],
+			'ctx-project',
+			'normal'
+        ); 
     }
 
 	public function metabox_callback() {
@@ -68,13 +76,53 @@ class Projects {
 		echo "</tbody></table>";
 	}
 
+	public function metabox_banking() {
+		global $post;
+
+		$reference = get_post_meta( $post->ID, 'reference', true );
+
+		$ref = [
+			"name" => $reference == 'name' ? "selected" : "",
+			"number" => $reference == 'number' ? "selected" : ""
+		];
+
+		$countries = Countries::find();
+
+		echo "<table class='form-table funding-country-settings'><tbody>";
+		echo "<tr><th scope='row'>" . __("Use exception for", "funding") . "</th><td><select name='exception'>";
+			echo "<option value='0'>" . __("All", "funding") . "</option>";
+			foreach($countries as $country) {
+				echo "<option value='" . $country['ID'] . "' " . (get_post_meta( $post->ID, 'exception', true ) == $country['ID'] ? "selected" : "") . ">" . $country['title'] . "</option>";
+			}
+		echo "</td></tr>";
+		echo "<tr><th scope='row'>" . __("IBAN", "funding") . "</th><td><input name='iban' value='" . get_post_meta( $post->ID, 'iban', true ) . "' type='text'/></td></tr>";
+		echo "<tr><th scope='row'>" . __("Bank", "funding") . "</th><td><input name='bank' value='" . get_post_meta( $post->ID, 'bank', true ) . "' type='text'/></td></tr>";
+		echo "<tr><th scope='row'>" . __("BIC", "funding") . "</th><td><input type='text' value='" . get_post_meta( $post->ID, 'bic', true ) . "' name='bic'/></td></tr>";
+		echo "<tr><th scope='row'>" . __("Beneficiary", "funding") . "</th><td><input type='text' value='" . get_post_meta( $post->ID, 'beneficiary', true ) . "' name='beneficiary'/></td></tr>";
+		echo "<tr><th scope='row'>" . __("Reference", "funding") . "</th><td><select name='reference'>";
+			echo "<option value='name' " . $ref['name'] . ">" . __("Project Name", "funding") . "</option>";
+			echo "<option value='number' " . $ref['number'] . ">" . __("Project Number", "funding") . "</option></select>";
+		echo "</td></tr>";
+		printf("<tr><th scope='row'>" . __("Reference Prefix", "funding") . "</th><td><input type='text' value='" . get_post_meta( $post->ID, 'ref-pre', true ) . "' name='ref-pre'/><p class='description'>" . __("Will be printed %s the project's name or number", "funding") . "</p></td></tr>", "<i>" . __("before", "funding") . "</i>");
+		printf("<tr><th scope='row'>" . __("Reference Suffix", "funding") . "</th><td><input type='text' value='" . get_post_meta( $post->ID, 'ref-suf', true ) . "' name='ref-suf'/><p class='description'>" . __("Will be printed %s the project's name or number", "funding") . "</p></td></tr>", "<i>" . __("after", "funding") . "</i>");
+		echo "</tbody></table>";
+	}
+
+
 	public function save( $post_id, $post ) {
 		if( $post->post_type != "ctx-project" || !current_user_can( 'edit_post', $post_id ) ) return $post_id;
 		if ( !isset( $_POST['projectnumber']) ) return $post_id;
         
 		$meta = [];
-    
+		$meta['exception'] = sanitize_text_field( $_POST['exception'] );
         $meta['projectnumber'] = sanitize_text_field( $_POST['projectnumber'] );
+		$meta['iban'] = sanitize_text_field( $_POST['iban'] );
+        $meta['bank'] = sanitize_text_field( $_POST['bank'] );
+		$meta['bic'] = sanitize_text_field( $_POST['bic'] );
+		$meta['beneficiary'] = sanitize_text_field( $_POST['beneficiary'] );
+		$meta['reference'] = sanitize_text_field( $_POST['reference'] );
+		$meta['ref-pre'] = sanitize_text_field( $_POST['ref-pre'] );
+		$meta['ref-suf'] = sanitize_text_field( $_POST['ref-suf'] );
        
         foreach ( $meta as $key => $value ) {    
             if ( get_post_meta( $post_id, $key, false ) ) {
@@ -131,7 +179,15 @@ class Projects {
 				"ID" => $post->ID,
 				"title" => $post->post_title,
 				"name" => $post->post_name,
-				"number" => get_post_meta($post->ID, 'projectnumber', true)
+				"number" => get_post_meta($post->ID, 'projectnumber', true),
+				"exception" => get_post_meta($post->ID, 'exception', true),
+				"iban" => get_post_meta($post->ID, 'iban', true),
+				"bank" => get_post_meta($post->ID, 'bank', true),
+				"bic" => get_post_meta($post->ID, 'bic', true),
+				"prefix" => get_post_meta($post->ID, 'ref-pre', true),
+				"reference" => get_post_meta($post->ID, 'reference', true),
+				"suffix" => get_post_meta($post->ID, 'ref-suf', true),
+				"beneficiary" => get_post_meta($post->ID, 'beneficiary', true)
 			];
 		}, $query->posts);
 
