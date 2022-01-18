@@ -39,7 +39,6 @@ const index = () => {
 							return <option value={country.name}>{country.title}</option>
 						}) }
 					</select>
-					<p>{__("Select the country you are donating from.", "funding")}</p>
 				</div>
 				<Select 
 					options={projects}
