@@ -601,6 +601,7 @@ class Start
                                                                      ''); ?></label>
                             <input type="text"
                                    id="dmm_name"
+								   required
                                    name="dmm_name"
                                    value="<?php echo(isset($_POST["dmm_name"]) ? esc_attr($_POST["dmm_name"]) : ''); ?>"
                                    style="width: 100%">
@@ -637,7 +638,7 @@ class Start
                                    name="dmm_email"
                                    value="<?php echo(isset($_POST["dmm_email"]) ? esc_attr($_POST["dmm_email"]) :
                                            ''); ?>"
-                                   style="width: 100%">
+                                   style="width: 100%" required>
                         </div>
                     <?php } ?>
 
