@@ -9,6 +9,7 @@
 
  import * as mollie from './blocks/mollie';
  import * as transfer from './blocks/transfer';
+ import * as altruja from './blocks/altruja';
   
  
  const registerBlock = ( block ) => {
@@ -27,7 +28,8 @@
  export const registerBlocks = () => {
 	 [
 		 mollie,
-		 transfer
+		 transfer,
+		 altruja
 	 ].forEach( registerBlock );
  };
  

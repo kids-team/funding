@@ -86,5 +86,14 @@ class Blocks {
 				'attributes' => ['preview' => ["type" => "boolean", "default" => false]]]
 				, $this->assets)
 		);
+
+		register_block_type(
+			"funding/altruja", array_merge(
+				['name' => 'funding/altruja', 
+				'api_version' => 2, 
+				'render_callback' => ["\Contexis\Funding\Altruja", 'render_block'], 
+				'attributes' => ['eid' => ["type" => "string", "default" => ""]]]
+				, $this->assets)
+		);
 	}
 }

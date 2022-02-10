@@ -35,6 +35,7 @@ require_once DMM_PLUGIN_PATH . 'classes/MollieApi.php';
 require_once DMM_PLUGIN_PATH . 'classes/Webhook.php';
 require_once DMM_PLUGIN_PATH . 'classes/Start.php';
 require_once DMM_PLUGIN_PATH . 'classes/Transfer.php';
+require_once DMM_PLUGIN_PATH . 'classes/Altruja.php';
 require_once DMM_PLUGIN_PATH . 'classes/Blocks.php';
 require_once DMM_PLUGIN_PATH . 'classes/BankingApi.php';
 require_once DMM_PLUGIN_PATH . 'classes/Projects.php';

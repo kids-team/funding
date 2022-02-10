@@ -1,0 +1,15 @@
+{
+	"name": "funding/altruja",
+	"api_version": 2,
+	"category": "widgets",
+	"attributes": {
+		"preview": {
+			"type": "boolean",
+			"default": false
+		},
+		"eid": {
+			"type": "string",
+			"default": ""
+		}
+	}
+}
