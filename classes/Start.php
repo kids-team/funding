@@ -560,7 +560,7 @@ class Start
                         sanitize_text_field($_POST['dmm_recurring_interval']) : get_option('dmm_default_interval');
                 ?>
                 <form action="<?php echo esc_attr($_SERVER['REQUEST_URI']); ?>"
-                      class="form"
+                      class="form grid grid--columns-1 grid--gap-8"
                       method="post">
 
                     <?php
