@@ -20,7 +20,7 @@ class Blocks {
 	}
 
 	public function register_assets() {
-		$dir = __DIR__ . "/../assets/";
+		$dir = __DIR__ . "/../build/";
 
 		if ( ! file_exists( $dir . "backend.asset.php" ) ) {
 				throw new \Error(
@@ -33,7 +33,7 @@ class Blocks {
 
 		wp_register_script(
 			$this->assets['editor_script'],
-			plugins_url( '../assets/backend.js', __FILE__ ),
+			plugins_url( '../build/backend.js', __FILE__ ),
 			$script_asset['dependencies'],
 			$script_asset['version']
 		);
@@ -42,19 +42,19 @@ class Blocks {
 		
 		wp_register_style(
 			$this->assets['editor_style'],
-			plugins_url( '../assets/backend.css', __FILE__ ),
+			plugins_url( '../build/backend.css', __FILE__ ),
 			array(),
 			$script_asset['version']
 		);
 
 		wp_register_style(
 			$this->assets['style'],
-			plugins_url( '../assets/style-backend.css', __FILE__ ),
+			plugins_url( '../build/style-backend.css', __FILE__ ),
 			array(),
 			$script_asset['version']
 		);
 
-		wp_enqueue_script('funding-frontend', plugin_dir_url(__FILE__) . "../assets/frontend.js", $frontend_asset['dependencies'], $frontend_asset['version'], true);
+		wp_enqueue_script('funding-frontend', plugin_dir_url(__FILE__) . "../build/frontend.js", $frontend_asset['dependencies'], $frontend_asset['version'], true);
 		wp_set_script_translations( 'funding-frontend', 'funding', plugin_dir_path( __FILE__ ) . '../languages' );
 
 		wp_localize_script('funding-frontend', "fundingScriptData", [
@@ -65,7 +65,7 @@ class Blocks {
 	}
 
 	public function add_admin_script() {
-		//wp_enqueue_script('ctx-block-filter', plugin_dir_url(__FILE__) . "../assets/admin.js", [], false, true);
+		//wp_enqueue_script('ctx-block-filter', plugin_dir_url(__FILE__) . "../build/admin.js", [], false, true);
 	}
 
 	public function register_blocks() {
