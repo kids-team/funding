@@ -842,6 +842,7 @@ class Start
 					<div class="button-group button-group--right">
                     <input type="submit"
                            name="dmm_submitted"
+						   class="button button--primary"
                            value="<?php echo esc_attr(__('Donate', 'funding')); ?>"
 						   <?php echo $preview ? 'disabled' : '' ?>
 					>
