@@ -121,19 +121,6 @@ class Admin {
                 'dmm_page_settings'
             )
         );
-
-        // Hidden
-        add_submenu_page(
-            null,
-            __('Donation', 'funding'),
-            __('Donation', 'funding'),
-            get_option('dmm_rights_donations', DMM_PLUGIN_ROLE),
-            DMM_PAGE_DONATION,
-            array(
-                $this,
-                'dmm_page_donation'
-            )
-        );
     }
 
     /**
