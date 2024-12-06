@@ -2,129 +2,373 @@
 # This file is distributed under the same license as the Plugins - Doneren met Mollie - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-04-25 01:45:33+0000\n"
+"PO-Revision-Date: 2024-11-18 10:00+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/3.0.0-alpha.2\n"
-"Language: de\n"
+"X-Generator: Loco https://localise.biz/\n"
+"Language: de_AT\n"
+"X-Domain: funding\n"
 "Project-Id-Version: Plugins - Doneren met Mollie - Stable (latest release)\n"
+"Language-Team: Deutsch (Österreich)"
 
-#: includes/class-start.php:324
-msgid "Please choose a project"
-msgstr "Bitte wählen Sie ein Projekt"
+#: ../../../../../../common/plugins/funding/classes/Start.php:320
+msgid "A message is required"
+msgstr "Nachricht erforderlich"
 
-#: includes/class-donors-table.php:9
-msgid "donors"
-msgstr "Spender"
+#: ../../../../../../common/plugins/funding/classes/Admin.php:821
+msgid "Activate recurring payments"
+msgstr "Wiederkehrende Zahlungen aktivieren"
 
-#: includes/class-donors-table.php:8
-msgid "donor"
-msgstr "Spender"
+#: ../../../../../../common/plugins/funding/classes/Subscriptions_Table.php:90
+#: ../../../../../../common/plugins/funding/classes/Admin.php:716
+msgid "Active"
+msgstr "Aktiv"
 
-#: includes/class-admin.php:461
-msgid "Delete selected donors"
-msgstr "Ausgewählte Spender löschen"
+#: ../../../../../../common/plugins/funding/classes/Start.php:664
+#: ../../../../../../common/plugins/funding/classes/Admin.php:276
+#: ../../../../../../common/plugins/funding/classes/Admin.php:365
+#: ../../../../../../common/plugins/funding/classes/Admin.php:741
+msgid "Address"
+msgstr "Adresse"
 
-#: includes/class-admin.php:257
-msgid "Delete selected donations"
-msgstr "Ausgewählte Spenden löschen"
+#: ../../../../../../common/plugins/funding/classes/Admin.php:673
+#: ../../../../../../common/plugins/funding/classes/Admin.php:685
+msgid "Administrator"
+msgstr "Administrator"
 
-#: includes/class-donations-table.php:9
-msgid "donations"
-msgstr "Spenden"
+#: ../../../../../../common/plugins/funding/classes/Countries.php:84
+#: ../../../../../../common/plugins/funding/classes/Projects.php:107
+msgid "after"
+msgstr "nach"
 
-#: includes/class-donations-table.php:8
-msgid "donation"
-msgstr "Spende"
+#: ../../../../../../common/plugins/funding/classes/Projects.php:93
+msgid "All"
+msgstr "Alle"
 
-#: includes/class-donors-table.php:39
+#: ../../../../../../common/plugins/funding/classes/Countries.php:39
+msgid "All Countries"
+msgstr ""
+
+#: ../../../../../../common/plugins/funding/classes/Projects.php:41
+msgid "All projects"
+msgstr ""
+
+#: ../../../../../../common/plugins/funding/classes/Subscriptions_Table.php:11
+#: ../../../../../../common/plugins/funding/classes/Donations_Table.php:33
+#: ../../../../../../common/plugins/funding/classes/Start.php:787
+#: ../../../../../../common/plugins/funding/classes/Admin.php:283
+#: ../../../../../../common/plugins/funding/classes/Admin.php:380
+msgid "Amount"
+msgstr "Betrag"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:582
+msgid "Amounts"
+msgstr "Beträge"
+
+#: ../../../../../../common/plugins/funding/classes/Subscriptions_Table.php:77
+#: ../../../../../../common/plugins/funding/classes/Start.php:365
+#: ../../../../../../common/plugins/funding/classes/Start.php:587
+#: ../../../../../../common/plugins/funding/classes/Admin.php:848
+#: ../../../../../../common/plugins/funding/classes/Admin.php:860
+msgid "Annually"
+msgstr "Jährlich"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:884
+msgid "API-key"
+msgstr "API-Code"
+
+#: ../../../../../../common/plugins/funding/classes/Subscriptions_Table.php:29
+#: ../../../../../../common/plugins/funding/classes/Donations_Table.php:62
+#: ../../../../../../common/plugins/funding/classes/Donations_Table.php:64
+msgid "Are you sure?"
+msgstr "Bist du dir sicher?"
+
+#: ../../../../../../common/plugins/funding/classes/Donors_Table.php:41
 msgid "Are you sure? Active subscriptions will be cancelled."
 msgstr ""
 
-#: includes/class-admin.php:678
-msgid "Send metadata to Mollie"
-msgstr "Metadaten an Mollie senden"
+#: ../../../../../../common/plugins/funding/classes/Admin.php:675
+#: ../../../../../../common/plugins/funding/classes/Admin.php:687
+msgid "Author"
+msgstr "Autor"
 
-#: includes/class-start.php:842
-msgid "Privacy Policy"
-msgstr "Datenschutzerklärung"
-
-#: includes/class-start.php:840
-msgid "I hereby agree to the"
-msgstr ""
-
-#: includes/class-start.php:667
-msgid "Street"
-msgstr "Straße"
-
-#: includes/class-start.php:39
-msgid "Przelewy24"
-msgstr "Przelewy24"
-
-#: includes/class-start.php:27
-msgid "Credit card"
-msgstr "Kreditkarte"
-
-#: includes/class-admin.php:394
-msgid "Settlement amount"
-msgstr ""
-
-#: includes/class-start.php:284
-msgid "Please agree to our Privacy Policy"
-msgstr "Bitte stimmen sie unserer Datenschutzerklärung zu"
-
-#: includes/class-admin.php:801
-msgid "Link to privacy policy"
-msgstr "Link zur Datenschutzerklärung"
-
-#: includes/class-admin.php:785 includes/class-admin.php:796
-msgid "GDPR checkbox"
-msgstr "Datenschutzerklärung"
-
-#: includes/class-start.php:38
-msgid "KBC/CBC Payment Button"
-msgstr ""
-
-#: includes/class-start.php:37
-msgid "ING Home'Pay"
-msgstr "ING Home'Pay"
-
-#: includes/class-start.php:35
-msgid "Gift cards"
-msgstr "Geschenkkarten"
-
-#: includes/class-start.php:32
-msgid "Belfius Pay Button"
-msgstr ""
-
-#: includes/class-start.php:28
+#: ../../../../../../common/plugins/funding/classes/Start.php:28
 msgid "Bancontact"
 msgstr ""
 
-#: includes/class-admin.php:610
-msgid "If enabled, the donor can choose their own currency for donations"
-msgstr "Wenn aktiviert, kann der Spender seine eigene Währung auswählen"
+#: ../../../../../../common/plugins/funding/classes/Countries.php:76
+#: ../../../../../../common/plugins/funding/classes/Projects.php:99
+msgid "Bank"
+msgstr "Kreditinstitut"
 
-#: includes/class-admin.php:603
-msgid "Donor can choose currency"
-msgstr "Freie Währungsauswahl"
+#: ../../../../../../common/plugins/funding/classes/Start.php:30
+msgid "Bank transfer"
+msgstr "Banküberweisung"
 
-#: includes/class-admin.php:589
-msgid "Default currency used for preset amounts"
-msgstr "Die Standardwährung, die für Spenden verwendet wird"
+#: ../../../../../../common/plugins/funding/classes/Countries.php:83
+#: ../../../../../../common/plugins/funding/classes/Projects.php:106
+msgid "before"
+msgstr "vor"
 
-#: includes/class-admin.php:291 includes/class-admin.php:581
-#: includes/class-start.php:754
+#: ../../../../../../common/plugins/funding/classes/Start.php:32
+msgid "Belfius Pay Button"
+msgstr ""
+
+#: ../../../../../../common/plugins/funding/classes/Countries.php:78
+#: ../../../../../../common/plugins/funding/classes/Projects.php:101
+msgid "Beneficiary"
+msgstr "Begünstigter"
+
+#: ../../../../../../common/plugins/funding/classes/Countries.php:77
+#: ../../../../../../common/plugins/funding/classes/Projects.php:100
+msgid "BIC"
+msgstr "BIC"
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:34
+msgid "Bitcoin"
+msgstr "Bitcoin"
+
+#: ../../../../../../common/plugins/funding/classes/Subscriptions_Table.php:29
+msgid "Cancel"
+msgstr "Annullieren"
+
+#: ../../../../../../common/plugins/funding/classes/Subscriptions_Table.php:94
+#: ../../../../../../common/plugins/funding/classes/Donations_Table.php:136
+msgid "Cancelled"
+msgstr "Annulliert"
+
+#: ../../../../../../common/plugins/funding/classes/Donations_Table.php:148
+msgid "Charged back"
+msgstr "Rückerstattet"
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:976
+msgid "Choose a payment method"
+msgstr "Zahlungsmethode auswählen"
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:690
+#: ../../../../../../common/plugins/funding/classes/Admin.php:278
+msgid "City"
+msgstr "Stadt"
+
+#: ../../../../../../common/plugins/funding/classes/Donations_Table.php:28
+#: ../../../../../../common/plugins/funding/classes/Start.php:614
+#: ../../../../../../common/plugins/funding/classes/Admin.php:273
+#: ../../../../../../common/plugins/funding/classes/Admin.php:355
+#: ../../../../../../common/plugins/funding/classes/Admin.php:747
+msgid "Company name"
+msgstr "Unternehmensname"
+
+#: ../../../../../../common/plugins/funding/classes/Subscriptions_Table.php:100
+msgid "Completed"
+msgstr "Fertiggestellt"
+
+#: ../../../../../../common/plugins/funding/classes/Countries.php:33
+#: ../../../../../../common/plugins/funding/classes/Countries.php:45
+#: ../../../../../../common/plugins/funding/classes/Admin.php:107
+#: ../../../../../../common/plugins/funding/classes/Admin.php:107
+#: ../../../../../../common/plugins/funding/classes/Admin.php:108
+msgid "Countries"
+msgstr "Länder"
+
+#: ../../../../../../common/plugins/funding/classes/Countries.php:34
+#: ../../../../../../common/plugins/funding/classes/Start.php:702
+#: ../../../../../../common/plugins/funding/classes/Admin.php:279
+msgid "Country"
+msgstr "Land"
+
+#: ../../../../../../common/plugins/funding/classes/Countries.php:35
+#: ../../../../../../common/plugins/funding/classes/Countries.php:36
+msgid "Create new Country"
+msgstr "Neues Land anlegen"
+
+#: ../../../../../../common/plugins/funding/classes/Projects.php:37
+#: ../../../../../../common/plugins/funding/classes/Projects.php:38
+msgid "Create new project"
+msgstr "Neues Projekt anlegen"
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:27
+msgid "Credit card"
+msgstr "Kreditkarte"
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:26
+msgid "Creditcard"
+msgstr "Kreditkarte"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:825
+msgid "Creditcard or SEPA Direct Debit is necessary"
+msgstr "Nur Kreditkarte oder SEPA Lastschrift möglich"
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:747
+#: ../../../../../../common/plugins/funding/classes/Admin.php:282
+#: ../../../../../../common/plugins/funding/classes/Admin.php:569
 msgid "Currency"
 msgstr "Währung"
 
-#: includes/class-start.php:224
+#: ../../../../../../common/plugins/funding/classes/Donors_Table.php:23
+msgid "Customer ID"
+msgstr "Kunden ID"
+
+#: ../../../../../../common/plugins/funding/classes/Subscriptions_Table.php:9
+#: ../../../../../../common/plugins/funding/classes/Donations_Table.php:22
+#: ../../../../../../common/plugins/funding/classes/Admin.php:271
+msgid "Date/time"
+msgstr "Datum/Zeit"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:611
+msgid "Default amount"
+msgstr "Standardbetrag"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:577
+msgid "Default currency used for preset amounts"
+msgstr "Die Standardwährung, die für Spenden verwendet wird"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:853
+msgid "Default interval"
+msgstr "Standard Intervall"
+
+#: ../../../../../../common/plugins/funding/classes/Donations_Table.php:64
+#: ../../../../../../common/plugins/funding/classes/Donors_Table.php:41
+msgid "Delete"
+msgstr "Löschen"
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:846
+msgid "Donate"
+msgstr "Jetzt spenden"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:60
+#: ../../../../../../common/plugins/funding/classes/Admin.php:75
+#: ../../../../../../common/plugins/funding/classes/Admin.php:86
+#: ../../../../../../common/plugins/funding/classes/Admin.php:115
+msgid "Donate with Mollie"
+msgstr "Spenden mit Mollie"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:332
+msgid "Donation"
+msgstr "Spende"
+
+#: ../../../../../../common/plugins/funding/classes/Donations_Table.php:10
+msgid "donation"
+msgstr "Spende"
+
+#: ../../../../../../common/plugins/funding/classes/Donations_Table.php:39
+#: ../../../../../../common/plugins/funding/classes/Admin.php:287
+#: ../../../../../../common/plugins/funding/classes/Admin.php:405
+msgid "Donation ID"
+msgstr "Spenden ID"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:61
+#: ../../../../../../common/plugins/funding/classes/Admin.php:229
+msgid "Donations"
+msgstr "Spenden"
+
+#: ../../../../../../common/plugins/funding/classes/Donations_Table.php:11
+msgid "donations"
+msgstr "Spenden"
+
+#: ../../../../../../common/plugins/funding/classes/Donors_Table.php:10
+msgid "donor"
+msgstr "Spender"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:591
+msgid "Donor can choose currency"
+msgstr "Freie Währungsauswahl"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:86
+#: ../../../../../../common/plugins/funding/classes/Admin.php:87
+#: ../../../../../../common/plugins/funding/classes/Admin.php:446
+msgid "Donors"
+msgstr "Spender"
+
+#: ../../../../../../common/plugins/funding/classes/Donors_Table.php:11
+msgid "donors"
+msgstr "Spender"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:643
+msgid "Dropdown"
+msgstr "Dropdown"
+
+#: ../../../../../../common/plugins/funding/classes/Subscriptions_Table.php:74
+#: ../../../../../../common/plugins/funding/classes/Start.php:362
+#: ../../../../../../common/plugins/funding/classes/Start.php:583
+#: ../../../../../../common/plugins/funding/classes/Admin.php:847
+#: ../../../../../../common/plugins/funding/classes/Admin.php:859
+msgid "Each quarter"
+msgstr "Jedes Quartal"
+
+#: ../../../../../../common/plugins/funding/classes/Countries.php:37
+msgid "Edit Country"
+msgstr "Land bearbeiten"
+
+#: ../../../../../../common/plugins/funding/classes/Projects.php:39
+msgid "Edit project"
+msgstr "Projekt bearbeiten"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:674
+#: ../../../../../../common/plugins/funding/classes/Admin.php:686
+msgid "Editor"
+msgstr "Editor"
+
+#: ../../../../../../common/plugins/funding/classes/Donations_Table.php:31
+#: ../../../../../../common/plugins/funding/classes/Donors_Table.php:21
+#: ../../../../../../common/plugins/funding/classes/Start.php:631
+#: ../../../../../../common/plugins/funding/classes/Admin.php:274
+#: ../../../../../../common/plugins/funding/classes/Admin.php:350
+#: ../../../../../../common/plugins/funding/classes/Admin.php:729
+msgid "Email address"
+msgstr "E-Mail-Adresse"
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:772
+msgid "Enter your own amount"
+msgstr "Betrag angeben"
+
+#: ../../../../../../common/plugins/funding/classes/Donations_Table.php:140
+msgid "Expired"
+msgstr "Abgelaufen"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:237
+msgid "Export"
+msgstr "Exportieren"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:715
+msgid "Field"
+msgstr "Feld"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:706
+msgid "Fields"
+msgstr "Felder"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:533
+msgid "Form"
+msgstr "Formular"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:603
+msgid "Free input"
+msgstr "Freie Eingabe"
+
+#. Name of the plugin
+msgid "Funding"
+msgstr ""
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:765
+#: ../../../../../../common/plugins/funding/classes/Admin.php:776
+msgid "GDPR checkbox"
+msgstr "Datenschutzerklärung"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:532
+msgid "General"
+msgstr "Allgemein"
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:35
+msgid "Gift cards"
+msgstr "Geschenkkarten"
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:224
 msgid "Goal must be higher then 0"
 msgstr "Ziel muss größer 0 sein"
 
-#: includes/class-start.php:218
+#: ../../../../../../common/plugins/funding/classes/Start.php:218
 msgid "Goal reached!"
 msgstr "Ziel erreicht"
 
@@ -132,636 +376,507 @@ msgstr "Ziel erreicht"
 msgid "https://wobbie.nl"
 msgstr ""
 
-#. Author of the plugin
-msgid "Wobbie.nl"
-msgstr "Wobbie.nl"
-
-#. Description of the plugin
-msgid "Receive donations via Mollie"
-msgstr "Spenden mit Mollie erhalten"
-
-#: includes/class-donations-table.php:62 includes/class-donors-table.php:39
-msgid "Delete"
-msgstr "Löschen"
-
-#: includes/class-admin.php:226
-msgid "The donation can not be deleted"
-msgstr "Die Spende kann nicht gelöscht werden"
-
-#: includes/class-admin.php:223
-msgid "The donation is successful deleted"
-msgstr "Die Spende wurde erfolgreich gelöscht"
-
-#: includes/class-admin.php:51 includes/class-admin.php:547
-msgid "Support"
-msgstr "Support"
-
-#: includes/class-admin.php:329 includes/class-admin.php:405
-#: includes/class-admin.php:607 includes/class-admin.php:683
-msgid "No"
-msgstr "Nein"
-
-#: includes/class-admin.php:329 includes/class-admin.php:405
-#: includes/class-admin.php:608 includes/class-admin.php:682
-msgid "Yes"
-msgstr "Ja"
-
-#: includes/class-admin.php:295 includes/class-admin.php:404
-msgid "Recurring payment"
-msgstr "Wiederkehrende Zahlungen"
-
-#: includes/class-admin.php:919
-msgid "Default interval"
-msgstr "Standard Intervall"
-
-#: includes/class-admin.php:34
-msgid "In order for the plugin \"Donate with Mollie\" to function properly, it is necessary to enable permalinks in your <a href=\"options-permalink.php\">Wordpress settings</a>."
-msgstr "Damit das Plugin \"Spenden mit Mollie\" einwandfrei funktionieren kann, muss \"Permalinks\" in den <a href=\"options-permalink.php\">WordPress Einstellungen</a> aktiviert sein."
-
-#: includes/class-admin.php:701
-msgid "Rights subscriptions"
-msgstr "Rechte Abonnementen"
-
-#: includes/class-admin.php:695 includes/class-admin.php:707
-msgid "Author"
-msgstr "Autor"
-
-#: includes/class-admin.php:694 includes/class-admin.php:706
-msgid "Editor"
-msgstr "Editor"
-
-#: includes/class-admin.php:693 includes/class-admin.php:705
-msgid "Administrator"
-msgstr "Administrator"
-
-#: includes/class-admin.php:689
-msgid "Rights donations"
-msgstr "Rechte Spenden"
-
-#: includes/class-admin.php:246
-msgid "Export"
-msgstr "Exportieren"
-
-#: includes/class-admin.php:249 includes/class-admin.php:250
-msgid "Search"
-msgstr "Suche"
-
-#: includes/class-subscriptions-table.php:99
-msgid "Completed"
-msgstr "Fertiggestellt"
-
-#: includes/class-subscriptions-table.php:96
-msgid "Suspended"
-msgstr "Ausgesetzt"
-
-#: includes/class-subscriptions-table.php:28
-msgid "Cancel"
-msgstr "Annullieren"
-
-#: includes/class-subscriptions-table.php:14
-msgid "Subscription ID"
-msgstr "Abonnement ID"
-
-#: includes/class-subscriptions-table.php:11
-msgid "Interval"
-msgstr "Intervall"
-
-#: includes/class-donors-table.php:21
-msgid "Customer ID"
-msgstr "Kunden ID"
-
-#: includes/class-start.php:833
-msgid "I hereby authorize %s to collect the amount shown above from my account periodically."
-msgstr "Hiermit ermächtige ich %s den oben angezeigten Betrag   in regelmäßigen Abständen von meinem Konto abzubuchen. "
-
-#: includes/class-admin.php:923 includes/class-start.php:355
-#: includes/class-start.php:576
-msgid "One-time donation"
-msgstr "Einmalige Spende"
-
-#: includes/class-start.php:279
-msgid "Please give authorization to collect from your account"
-msgstr "Bitte ermächtigen Sie uns, Ihr Bankkonto belasten zu dürfen"
-
-#: includes/class-start.php:36
-msgid "Paysafecard"
-msgstr "Paysafecard"
-
-#: includes/class-start.php:34
-msgid "Bitcoin"
-msgstr "Bitcoin"
-
-#: includes/class-start.php:33
-msgid "PayPal"
-msgstr "PayPal"
-
-#: includes/class-start.php:31
-msgid "SEPA Direct Debit"
-msgstr "SEPA Lastschriftverfahren"
-
-#: includes/class-start.php:30
-msgid "Bank transfer"
-msgstr "Banküberweisung"
-
-#: includes/class-start.php:29
-msgid "SOFORT Banking"
-msgstr "SOFORT Banking"
-
-#: includes/class-start.php:26
-msgid "Creditcard"
-msgstr "Kreditkarte"
-
-#: includes/class-start.php:25
-msgid "iDEAL"
-msgstr "iDEAL"
-
-#: includes/class-donations-table.php:60 includes/class-donations-table.php:62
-#: includes/class-subscriptions-table.php:28
-msgid "Are you sure?"
-msgstr "Bist du dir sicher?"
-
-#: includes/class-admin.php:914 includes/class-admin.php:926
-#: includes/class-start.php:364 includes/class-start.php:587
-#: includes/class-subscriptions-table.php:76
-msgid "Annually"
-msgstr "Jährlich"
-
-#: includes/class-admin.php:913 includes/class-admin.php:925
-#: includes/class-start.php:361 includes/class-start.php:583
-#: includes/class-subscriptions-table.php:73
-msgid "Each quarter"
-msgstr "Jedes Quartal"
-
-#: includes/class-admin.php:912 includes/class-admin.php:924
-#: includes/class-start.php:358 includes/class-start.php:579
-#: includes/class-subscriptions-table.php:70
-msgid "Monthly"
-msgstr "Monatlich"
-
-#: includes/class-admin.php:909
-msgid "Possible intervals"
-msgstr "Mögliche Intervalle"
-
-#: includes/class-admin.php:901
-msgid "Name of the foundation"
-msgstr "Name der Stiftung"
-
-#: includes/class-admin.php:891
-msgid "Creditcard or SEPA Direct Debit is necessary"
-msgstr "Nur Kreditkarte oder SEPA Lastschrift möglich"
-
-#: includes/class-admin.php:887
-msgid "Activate recurring payments"
-msgstr "Wiederkehrende Zahlungen aktivieren"
-
-#: includes/class-admin.php:631
-msgid "Minimum amount"
-msgstr "Minimalbetrag"
-
-#: includes/class-admin.php:544
-msgid "Recurring payments"
-msgstr "Wiederkehrende Zahlungen"
-
-#: includes/class-admin.php:512
-msgid "The subscription is not cancelled"
-msgstr "Das Abonnement wurde nicht gelöscht"
-
-#: includes/class-admin.php:509
-msgid "The subscription is successful cancelled"
-msgstr "Das Abonnement wurde erfolgreich gelöscht"
-
-#: includes/class-admin.php:94 includes/class-admin.php:95
-#: includes/class-admin.php:455
-msgid "Donors"
-msgstr "Spender"
-
-#: includes/class-admin.php:83 includes/class-admin.php:84
-#: includes/class-admin.php:521
-msgid "Subscriptions"
-msgstr "Abonnementen"
-
-#. Plugin Name of the plugin
-msgid "Doneren met Mollie"
-msgstr "Spenden mit Mollie"
-
-#: includes/class-start.php:551
-msgid "The payment was not successful, please try again."
-msgstr "Dein Zahlung war nicht erfolgreich, bitte probiere es erneut."
-
-#: includes/class-start.php:538
-msgid "Thank you for your donation!"
-msgstr "Herzlichen Dank für deine Spende!"
-
-#: includes/class-start.php:984
-msgid "Choose a payment method"
-msgstr "Zahlungsmethode auswählen"
-
-#: includes/class-admin.php:53 includes/class-admin.php:545
-#: includes/class-start.php:856
-msgid "Donate"
-msgstr "Jetzt spenden"
-
-#: includes/class-start.php:781
-msgid "Enter your own amount"
-msgstr "Betrag angeben"
-
-#: includes/class-admin.php:288 includes/class-start.php:708
-msgid "Country"
-msgstr "Land"
-
-#: includes/class-admin.php:287 includes/class-start.php:695
-msgid "City"
-msgstr "Stadt"
-
-#: includes/class-admin.php:286 includes/class-start.php:681
-msgid "Zipcode"
-msgstr "Postleitzahl"
-
-#: includes/class-start.php:332
-msgid "The amount is too low, please choose a higher amount"
-msgstr "Der Betrag ist zu niedrig, bitte wählen Sie einen höheren Betrag aus"
-
-#: includes/class-start.php:328
-msgid "Please choose an amount"
-msgstr "Betrag erforderlich"
-
-#: includes/class-start.php:319
-msgid "A message is required"
-msgstr "Nachricht erforderlich"
-
-#: includes/class-start.php:314
-msgid "Your country is required"
-msgstr "Land erforderlich"
-
-#: includes/class-start.php:309
-msgid "Your zipcode is required"
-msgstr "Postleitzahl erforderlich"
-
-#: includes/class-start.php:304
-msgid "Your city is required"
-msgstr "Wohnort erforderlich"
-
-#: includes/class-start.php:299
-msgid "Your street is required"
+#: ../../../../../../common/plugins/funding/classes/Start.php:830
+msgid "I hereby agree to the"
 msgstr ""
 
-#: includes/class-start.php:294
-msgid "Your company name is required"
-msgstr "Unternehmensname erforderlich"
-
-#: includes/class-start.php:289
-msgid "Your phone number is required"
-msgstr "Telefonnummer erforderlich"
-
-#: includes/class-start.php:275
-msgid "Your email address is required"
-msgstr "Email Adresse erforderlich"
-
-#: includes/class-start.php:270
-msgid "Your name is required"
-msgstr "Name erforderlich"
-
-#: includes/class-donations-table.php:146
-msgid "Charged back"
-msgstr "Rückerstattet"
-
-#: includes/class-donations-table.php:144
-msgid "Refunded"
-msgstr "Erstattet"
-
-#: includes/class-donations-table.php:142
-msgid "Paid out"
-msgstr "Ausgezahlt"
-
-#: includes/class-donations-table.php:140
-msgid "Paid"
-msgstr "Bezahlt"
-
-#: includes/class-donations-table.php:138
-msgid "Expired"
-msgstr "Abgelaufen"
-
-#: includes/class-donations-table.php:136
-#: includes/class-subscriptions-table.php:86
-msgid "Pending"
-msgstr "Ausstehend"
-
-#: includes/class-donations-table.php:134
-#: includes/class-subscriptions-table.php:93
-msgid "Cancelled"
-msgstr "Annulliert"
-
-#: includes/class-donations-table.php:131
-msgid "Open"
-msgstr "Öffnen"
-
-#: includes/class-donations-table.php:60
-msgid "Refund"
-msgstr "Erstattung"
-
-#: includes/class-donations-table.php:57
-#: includes/class-subscriptions-table.php:27
-msgid "View"
-msgstr "Anzeigen"
-
-#: includes/class-admin.php:293 includes/class-donations-table.php:36
-#: includes/class-subscriptions-table.php:12
-msgid "Status"
-msgstr "Status"
-
-#: includes/class-admin.php:280 includes/class-donations-table.php:20
-#: includes/class-subscriptions-table.php:8
-msgid "Date/time"
-msgstr "Datum/Zeit"
-
-#: includes/class-admin.php:954
-msgid "Starts with live_ or test_"
-msgstr "Beginnt mit live_ oder test_"
-
-#: includes/class-admin.php:950
-msgid "API-key"
-msgstr "API-Code"
-
-#: includes/class-admin.php:847
-msgid "Message failure class"
+#: ../../../../../../common/plugins/funding/classes/Start.php:823
+#, php-format
+msgid ""
+"I hereby authorize %s to collect the amount shown above from my account "
+"periodically."
 msgstr ""
+"Hiermit ermächtige ich %s den oben angezeigten Betrag   in regelmäßigen "
+"Abständen von meinem Konto abzubuchen. "
 
-#: includes/class-admin.php:839
-msgid "Message success class"
-msgstr ""
-
-#: includes/class-admin.php:831
-msgid "Form button class"
-msgstr ""
-
-#: includes/class-admin.php:823
-msgid "Form fields class"
-msgstr ""
-
-#: includes/class-admin.php:815
-msgid "Form class"
-msgstr "Formular Klasse"
-
-#: includes/class-admin.php:810
-msgid "Classes"
-msgstr "Klassen"
-
-#: includes/class-admin.php:737
-msgid "Required"
-msgstr "Erforderlich"
-
-#: includes/class-admin.php:736 includes/class-subscriptions-table.php:89
-msgid "Active"
-msgstr "Aktiv"
-
-#: includes/class-admin.php:735
-msgid "Field"
-msgstr "Feld"
-
-#: includes/class-admin.php:726
-msgid "Fields"
-msgstr "Felder"
-
-#: includes/class-admin.php:673
-msgid "Each project on a new line"
-msgstr "Jedes Projekt auf einer neuen Ebene"
-
-#: includes/class-admin.php:669
-msgid "Projects"
-msgstr "Projekte"
-
-#: includes/class-admin.php:664
-msgid "Page after failed donation"
-msgstr "Seite nach fehlgeschlagener Spende anzeigen"
-
-#: includes/class-admin.php:661 includes/class-admin.php:665
-msgid "Default"
-msgstr "Standard"
-
-#: includes/class-admin.php:660
-msgid "Page after successful donation"
-msgstr "Seite nach erfolgreicher Spende anzeigen"
-
-#: includes/class-admin.php:655
-msgid "Dropdown"
-msgstr "Dropdown"
-
-#: includes/class-admin.php:654
-msgid "Only icons"
-msgstr "Nur Symbole"
-
-#: includes/class-admin.php:653
-msgid "Only text"
-msgstr "Nur Text"
-
-#: includes/class-admin.php:652
-msgid "Icons & text"
-msgstr "Symbole & Text"
-
-#: includes/class-admin.php:648
-msgid "Payment methods"
-msgstr "Zahlungsmethoden"
-
-#: includes/class-admin.php:643
-msgid "You can use: %s"
-msgstr "Sie können verwenden: %s"
-
-#: includes/class-admin.php:639
-msgid "Payment description"
-msgstr "Zahlungsbeschreibung"
-
-#: includes/class-admin.php:623
-msgid "Default amount"
-msgstr "Standardbetrag"
-
-#: includes/class-admin.php:615
-msgid "Free input"
-msgstr "Freie Eingabe"
-
-#: includes/class-admin.php:598
-msgid "Separate amounts with /. Example: \"%s\""
-msgstr "Seperate Beträge mit /. Beispiel: \"%s\""
-
-#: includes/class-admin.php:594
-msgid "Amounts"
-msgstr "Beträge"
-
-#: includes/class-admin.php:543
-msgid "Mollie settings"
-msgstr "Mollie Einstellungen"
-
-#: includes/class-admin.php:542
-msgid "Form"
-msgstr "Formular"
-
-#: includes/class-admin.php:541
-msgid "General"
-msgstr "Allgemein"
-
-#: includes/class-admin.php:297 includes/class-admin.php:419
-msgid "Payment ID"
-msgstr "Zahlungs ID"
-
-#: includes/class-admin.php:296 includes/class-admin.php:414
-#: includes/class-donations-table.php:37
-msgid "Donation ID"
-msgstr "Spenden ID"
-
-#: includes/class-admin.php:409
-msgid "Payment status"
-msgstr "Zahlungsstatus"
-
-#: includes/class-admin.php:294 includes/class-admin.php:399
-msgid "Payment method"
-msgstr "Zahlungsart"
-
-#: includes/class-admin.php:292 includes/class-admin.php:389
-#: includes/class-donations-table.php:31 includes/class-start.php:773
-#: includes/class-subscriptions-table.php:10
-msgid "Amount"
-msgstr "Betrag"
-
-msgid "Select amount"
-msgstr "Betrag wählen"
-
-#: includes/class-admin.php:290 includes/class-admin.php:384
-#: includes/class-admin.php:773 includes/class-start.php:737
-msgid "Message"
-msgstr "Nachricht"
-
-#: includes/class-admin.php:289 includes/class-admin.php:379
-#: includes/class-admin.php:779 includes/class-donations-table.php:34
-#: includes/class-start.php:725
-msgid "Project"
-msgstr "Projekt"
-
-#: includes/class-admin.php:285 includes/class-admin.php:374
-#: includes/class-admin.php:761
-msgid "Address"
-msgstr "Adresse"
-
-#: includes/class-admin.php:284 includes/class-admin.php:369
-#: includes/class-admin.php:755 includes/class-start.php:650
-msgid "Phone number"
-msgstr "Telefonnummer"
-
-#: includes/class-admin.php:282 includes/class-admin.php:364
-#: includes/class-admin.php:767 includes/class-donations-table.php:26
-#: includes/class-start.php:614
-msgid "Company name"
-msgstr "Unternehmensname"
-
-#: includes/class-admin.php:283 includes/class-admin.php:359
-#: includes/class-admin.php:749 includes/class-donations-table.php:29
-#: includes/class-donors-table.php:19 includes/class-start.php:632
-msgid "Email address"
-msgstr "E-Mail-Adresse"
-
-#: includes/class-admin.php:281 includes/class-admin.php:354
-#: includes/class-admin.php:743 includes/class-donations-table.php:23
-#: includes/class-donors-table.php:18 includes/class-start.php:597
-#: includes/class-subscriptions-table.php:9
-msgid "Name"
-msgstr "Name"
-
-#: includes/class-admin.php:229
-msgid "The donations have been successfully removed from the database"
-msgstr "Die Spenden wurden erfolgreich aus dem Datenbestand entfernt"
-
-#: includes/class-admin.php:220
-msgid "The donation can not be refunded"
-msgstr "Die Spende konnte nicht rückerstattet werden"
-
-#: includes/class-admin.php:217
-msgid "The donation is successful refunded to the donator"
-msgstr "Die Spende wurde erfolgreich rückerstattet"
-
-#: includes/class-admin.php:177 includes/class-admin.php:476
-#: includes/class-admin.php:866 includes/class-start.php:256
-msgid "No API-key set"
-msgstr "Kein API-Code eingegeben"
-
-#: includes/class-admin.php:120 includes/class-admin.php:121
-#: includes/class-admin.php:341 includes/class-admin.php:642
-msgid "Donation"
-msgstr "Spende"
-
-#: includes/class-admin.php:107 includes/class-admin.php:108
-#: includes/class-start.php:141
-msgid "Settings"
-msgstr "Einstellungen"
-
-#: includes/class-admin.php:69 includes/class-admin.php:238
-msgid "Donations"
-msgstr "Spenden"
-
-#: includes/class-admin.php:68 includes/class-admin.php:83
-#: includes/class-admin.php:94 includes/class-admin.php:107
-msgid "Donate with Mollie"
-msgstr "Spenden mit Mollie"
-
-msgid "Payment Settings"
-msgstr "Einstellungen für Anweisung"
-
+#: ../../../../../../common/plugins/funding/classes/Countries.php:75
+#: ../../../../../../common/plugins/funding/classes/Projects.php:98
 msgid "IBAN"
 msgstr "IBAN"
 
-msgid "Bank"
-msgstr "Kreditinstitut"
+#: ../../../../../../common/plugins/funding/classes/Admin.php:640
+msgid "Icons & text"
+msgstr "Symbole & Text"
 
-msgid "BIC"
-msgstr "BIC"
+#. Variable translations
+#: ../../../../../../common/plugins/funding/classes/Start.php:25
+msgid "iDEAL"
+msgstr "iDEAL"
 
-msgid "Beneficiary"
-msgstr "Begünstigter"
+#: ../../../../../../common/plugins/funding/classes/Admin.php:598
+msgid "If enabled, the donor can choose their own currency for donations"
+msgstr "Wenn aktiviert, kann der Spender seine eigene Währung auswählen"
 
-msgid "Reference"
-msgstr "Verwendungszweck"
+#: ../../../../../../common/plugins/funding/classes/Admin.php:37
+msgid ""
+"In order for the plugin \"Donate with Mollie\" to function properly, it is "
+"necessary to enable permalinks in your <a href=\"options-permalink.php\">"
+"Wordpress settings</a>."
+msgstr ""
+"Damit das Plugin \"Spenden mit Mollie\" einwandfrei funktionieren kann, muss "
+"\"Permalinks\" in den <a href=\"options-permalink.php\">WordPress "
+"Einstellungen</a> aktiviert sein."
 
+#: ../../../../../../common/plugins/funding/classes/Start.php:37
+msgid "ING Home'Pay"
+msgstr "ING Home'Pay"
+
+#: ../../../../../../common/plugins/funding/classes/Subscriptions_Table.php:12
+msgid "Interval"
+msgstr "Intervall"
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:38
+msgid "KBC/CBC Payment Button"
+msgstr ""
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:781
+msgid "Link to privacy policy"
+msgstr "Link zur Datenschutzerklärung"
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:730
+#: ../../../../../../common/plugins/funding/classes/Admin.php:281
+#: ../../../../../../common/plugins/funding/classes/Admin.php:375
+#: ../../../../../../common/plugins/funding/classes/Admin.php:753
+msgid "Message"
+msgstr "Nachricht"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:619
+msgid "Minimum amount"
+msgstr "Minimalbetrag"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:534
+msgid "Mollie settings"
+msgstr "Mollie Einstellungen"
+
+#: ../../../../../../common/plugins/funding/classes/Subscriptions_Table.php:71
+#: ../../../../../../common/plugins/funding/classes/Start.php:359
+#: ../../../../../../common/plugins/funding/classes/Start.php:579
+#: ../../../../../../common/plugins/funding/classes/Admin.php:846
+#: ../../../../../../common/plugins/funding/classes/Admin.php:858
+msgid "Monthly"
+msgstr "Monatlich"
+
+#: ../../../../../../common/plugins/funding/classes/Subscriptions_Table.php:10
+#: ../../../../../../common/plugins/funding/classes/Donations_Table.php:25
+#: ../../../../../../common/plugins/funding/classes/Donors_Table.php:20
+#: ../../../../../../common/plugins/funding/classes/Start.php:597
+#: ../../../../../../common/plugins/funding/classes/Admin.php:272
+#: ../../../../../../common/plugins/funding/classes/Admin.php:345
+#: ../../../../../../common/plugins/funding/classes/Admin.php:723
+msgid "Name"
+msgstr "Name"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:835
+msgid "Name of the foundation"
+msgstr "Name der Stiftung"
+
+#: ../../../../../../common/plugins/funding/classes/Countries.php:38
+msgid "New Country"
+msgstr ""
+
+#: ../../../../../../common/plugins/funding/classes/Projects.php:40
+msgid "New project"
+msgstr ""
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:320
+#: ../../../../../../common/plugins/funding/classes/Admin.php:396
+#: ../../../../../../common/plugins/funding/classes/Admin.php:595
+#: ../../../../../../common/plugins/funding/classes/Admin.php:663
+msgid "No"
+msgstr "Nein"
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:257
+#: ../../../../../../common/plugins/funding/classes/Admin.php:168
+#: ../../../../../../common/plugins/funding/classes/Admin.php:467
+#: ../../../../../../common/plugins/funding/classes/Admin.php:800
+msgid "No API-key set"
+msgstr "Kein API-Code eingegeben"
+
+#: ../../../../../../common/plugins/funding/classes/Countries.php:42
+msgid "No Country found"
+msgstr ""
+
+#: ../../../../../../common/plugins/funding/classes/Countries.php:43
+msgid "No Country found in trash"
+msgstr ""
+
+#: ../../../../../../common/plugins/funding/classes/Projects.php:44
+msgid "No project found"
+msgstr ""
+
+#: ../../../../../../common/plugins/funding/classes/Projects.php:45
+msgid "No project found in trash"
+msgstr ""
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:356
+#: ../../../../../../common/plugins/funding/classes/Start.php:576
+#: ../../../../../../common/plugins/funding/classes/Admin.php:857
+msgid "One-time donation"
+msgstr "Einmalige Spende"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:642
+msgid "Only icons"
+msgstr "Nur Symbole"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:641
+msgid "Only text"
+msgstr "Nur Text"
+
+#: ../../../../../../common/plugins/funding/classes/Donations_Table.php:133
+msgid "Open"
+msgstr "Öffnen"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:652
+msgid "Page after failed donation"
+msgstr "Seite nach fehlgeschlagener Spende anzeigen"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:648
+msgid "Page after successful donation"
+msgstr "Seite nach erfolgreicher Spende anzeigen"
+
+#: ../../../../../../common/plugins/funding/classes/Donations_Table.php:142
+msgid "Paid"
+msgstr "Bezahlt"
+
+#: ../../../../../../common/plugins/funding/classes/Donations_Table.php:144
+msgid "Paid out"
+msgstr "Ausgezahlt"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:627
+msgid "Payment description"
+msgstr "Zahlungsbeschreibung"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:288
+#: ../../../../../../common/plugins/funding/classes/Admin.php:410
+msgid "Payment ID"
+msgstr "Zahlungs ID"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:285
+#: ../../../../../../common/plugins/funding/classes/Admin.php:390
+msgid "Payment method"
+msgstr "Zahlungsart"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:636
+msgid "Payment methods"
+msgstr "Zahlungsmethoden"
+
+#: ../../../../../../common/plugins/funding/classes/Countries.php:55
+msgid "Payment Settings"
+msgstr "Einstellungen für Anweisung"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:400
+msgid "Payment status"
+msgstr "Zahlungsstatus"
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:33
+msgid "PayPal"
+msgstr "PayPal"
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:36
+msgid "Paysafecard"
+msgstr "Paysafecard"
+
+#: ../../../../../../common/plugins/funding/classes/Subscriptions_Table.php:87
+#: ../../../../../../common/plugins/funding/classes/Donations_Table.php:138
+msgid "Pending"
+msgstr "Ausstehend"
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:648
+#: ../../../../../../common/plugins/funding/classes/Admin.php:275
+#: ../../../../../../common/plugins/funding/classes/Admin.php:360
+#: ../../../../../../common/plugins/funding/classes/Admin.php:735
+msgid "Phone number"
+msgstr "Telefonnummer"
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:285
+msgid "Please agree to our Privacy Policy"
+msgstr "Bitte stimmen sie unserer Datenschutzerklärung zu"
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:325
+msgid "Please choose a project"
+msgstr "Bitte wählen Sie ein Projekt"
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:329
+msgid "Please choose an amount"
+msgstr "Betrag erforderlich"
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:280
+msgid "Please give authorization to collect from your account"
+msgstr "Bitte ermächtigen Sie uns, Ihr Bankkonto belasten zu dürfen"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:843
+msgid "Possible intervals"
+msgstr "Mögliche Intervalle"
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:832
+msgid "Privacy Policy"
+msgstr "Datenschutzerklärung"
+
+#: ../../../../../../common/plugins/funding/classes/Donations_Table.php:36
+#: ../../../../../../common/plugins/funding/classes/Start.php:718
+#: ../../../../../../common/plugins/funding/classes/Projects.php:36
+#: ../../../../../../common/plugins/funding/classes/Admin.php:280
+#: ../../../../../../common/plugins/funding/classes/Admin.php:370
+#: ../../../../../../common/plugins/funding/classes/Admin.php:759
+msgid "Project"
+msgstr "Projekt"
+
+#: ../../../../../../common/plugins/funding/classes/Projects.php:65
+msgid "Project Banking"
+msgstr "Bankverbindung"
+
+#: ../../../../../../common/plugins/funding/classes/Countries.php:80
+#: ../../../../../../common/plugins/funding/classes/Projects.php:103
 msgid "Project Name"
 msgstr "Projektname"
 
+#: ../../../../../../common/plugins/funding/classes/Countries.php:81
+#: ../../../../../../common/plugins/funding/classes/Projects.php:75
+#: ../../../../../../common/plugins/funding/classes/Projects.php:104
 msgid "Project Number"
 msgstr "Projektnummer"
 
+#: ../../../../../../common/plugins/funding/classes/Projects.php:57
 msgid "Project Settings"
 msgstr "Projektoptionen"
 
-msgid "Create new project"
-msgstr "Neues Projekt anlegen"
+#: ../../../../../../common/plugins/funding/classes/Projects.php:35
+#: ../../../../../../common/plugins/funding/classes/Projects.php:47
+#: ../../../../../../common/plugins/funding/classes/Admin.php:99
+#: ../../../../../../common/plugins/funding/classes/Admin.php:99
+#: ../../../../../../common/plugins/funding/classes/Admin.php:100
+msgid "Projects"
+msgstr "Projekte"
 
-msgid "Edit project"
-msgstr "Projekt bearbeiten"
+#: ../../../../../../common/plugins/funding/classes/Start.php:39
+msgid "Przelewy24"
+msgstr "Przelewy24"
 
+#. Description of the plugin
+msgid "Receive donations via Mollie or offline Payment"
+msgstr ""
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:286
+#: ../../../../../../common/plugins/funding/classes/Admin.php:395
+msgid "Recurring payment"
+msgstr "Wiederkehrende Zahlungen"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:535
+msgid "Recurring payments"
+msgstr "Wiederkehrende Zahlungen"
+
+#: ../../../../../../common/plugins/funding/classes/Countries.php:79
+#: ../../../../../../common/plugins/funding/classes/Projects.php:102
+msgid "Reference"
+msgstr "Verwendungszweck"
+
+#: ../../../../../../common/plugins/funding/classes/Countries.php:83
+#: ../../../../../../common/plugins/funding/classes/Projects.php:106
 msgid "Reference Prefix"
 msgstr "Verwendugszweck Präfix"
 
+#: ../../../../../../common/plugins/funding/classes/Countries.php:84
+#: ../../../../../../common/plugins/funding/classes/Projects.php:107
 msgid "Reference Suffix"
 msgstr "Verwendugszweck Suffix"
 
-msgid "Will be printed %s the project's name or number"
-msgstr "Wird %s der Projektnummer oder dem Projektnamen eingefügt"
+#: ../../../../../../common/plugins/funding/classes/Donations_Table.php:62
+msgid "Refund"
+msgstr "Erstattung"
 
-msgid "before"
-msgstr "vor"
+#: ../../../../../../common/plugins/funding/classes/Donations_Table.php:146
+msgid "Refunded"
+msgstr "Erstattet"
 
-msgid "after"
-msgstr "nach"
+#: ../../../../../../common/plugins/funding/classes/Admin.php:717
+msgid "Required"
+msgstr "Erforderlich"
 
-msgid "Countries"
-msgstr "Länder"
+#: ../../../../../../common/plugins/funding/classes/Admin.php:669
+msgid "Rights donations"
+msgstr "Rechte Spenden"
 
-msgid "Edit Country"
-msgstr "Land bearbeiten"
+#: ../../../../../../common/plugins/funding/classes/Admin.php:681
+msgid "Rights subscriptions"
+msgstr "Rechte Abonnementen"
 
-msgid "Create new Country"
-msgstr "Neues Land anlegen"
+#: ../../../../../../common/plugins/funding/classes/Countries.php:41
+msgid "Search Countries"
+msgstr ""
 
+#: ../../../../../../common/plugins/funding/classes/Projects.php:43
+msgid "Search projects"
+msgstr ""
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:768
+msgid "Select amount"
+msgstr "Betrag wählen"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:658
+msgid "Send metadata to Mollie"
+msgstr "Metadaten an Mollie senden"
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:31
+msgid "SEPA Direct Debit"
+msgstr "SEPA Lastschriftverfahren"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:586
+#, php-format
+msgid "Separate amounts with /. Example: \"%s\""
+msgstr "Seperate Beträge mit /. Beispiel: \"%s\""
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:141
+#: ../../../../../../common/plugins/funding/classes/Admin.php:115
+#: ../../../../../../common/plugins/funding/classes/Admin.php:116
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:385
+msgid "Settlement amount"
+msgstr ""
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:29
+msgid "SOFORT Banking"
+msgstr "SOFORT Banking"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:888
+msgid "Starts with live_ or test_"
+msgstr "Beginnt mit live_ oder test_"
+
+#: ../../../../../../common/plugins/funding/classes/Subscriptions_Table.php:13
+#: ../../../../../../common/plugins/funding/classes/Donations_Table.php:38
+#: ../../../../../../common/plugins/funding/classes/Admin.php:284
+msgid "Status"
+msgstr "Status"
+
+#: ../../../../../../common/plugins/funding/classes/Subscriptions_Table.php:15
+msgid "Subscription ID"
+msgstr "Abonnement ID"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:75
+#: ../../../../../../common/plugins/funding/classes/Admin.php:76
+#: ../../../../../../common/plugins/funding/classes/Admin.php:512
+msgid "Subscriptions"
+msgstr "Abonnementen"
+
+#: ../../../../../../common/plugins/funding/classes/Subscriptions_Table.php:97
+msgid "Suspended"
+msgstr "Ausgesetzt"
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:539
+msgid "Thank you for your donation!"
+msgstr "Herzlichen Dank für deine Spende!"
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:333
+msgid "The amount is too low, please choose a higher amount"
+msgstr "Der Betrag ist zu niedrig, bitte wählen Sie einen höheren Betrag aus"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:217
+msgid "The donation can not be deleted"
+msgstr "Die Spende kann nicht gelöscht werden"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:211
+msgid "The donation can not be refunded"
+msgstr "Die Spende konnte nicht rückerstattet werden"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:214
+msgid "The donation is successful deleted"
+msgstr "Die Spende wurde erfolgreich gelöscht"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:208
+msgid "The donation is successful refunded to the donator"
+msgstr "Die Spende wurde erfolgreich rückerstattet"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:220
+msgid "The donations have been successfully removed from the database"
+msgstr "Die Spenden wurden erfolgreich aus dem Datenbestand entfernt"
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:552
+msgid "The payment was not successful, please try again."
+msgstr "Dein Zahlung war nicht erfolgreich, bitte probiere es erneut."
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:503
+msgid "The subscription is not cancelled"
+msgstr "Das Abonnement wurde nicht gelöscht"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:500
+msgid "The subscription is successful cancelled"
+msgstr "Das Abonnement wurde erfolgreich gelöscht"
+
+#: ../../../../../../common/plugins/funding/classes/Projects.php:92
 msgid "Use exception for"
 msgstr "Ausnahme verwenden für"
 
-msgid "All"
-msgstr "Alle"
+#: ../../../../../../common/plugins/funding/classes/Subscriptions_Table.php:28
+#: ../../../../../../common/plugins/funding/classes/Donations_Table.php:59
+msgid "View"
+msgstr "Anzeigen"
 
-msgid "Project Banking"
-msgstr "Bankverbindung"
+#: ../../../../../../common/plugins/funding/classes/Countries.php:40
+msgid "View Country"
+msgstr ""
+
+#: ../../../../../../common/plugins/funding/classes/Projects.php:42
+msgid "View project"
+msgstr ""
+
+#: ../../../../../../common/plugins/funding/classes/Countries.php:83
+#: ../../../../../../common/plugins/funding/classes/Countries.php:84
+#: ../../../../../../common/plugins/funding/classes/Projects.php:106
+#: ../../../../../../common/plugins/funding/classes/Projects.php:107
+#, php-format
+msgid "Will be printed %s the project's name or number"
+msgstr "Wird %s der Projektnummer oder dem Projektnamen eingefügt"
+
+#. Author of the plugin
+msgid "Wobbie.nl, Thomas Gollenia"
+msgstr ""
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:320
+#: ../../../../../../common/plugins/funding/classes/Admin.php:396
+#: ../../../../../../common/plugins/funding/classes/Admin.php:596
+#: ../../../../../../common/plugins/funding/classes/Admin.php:662
+msgid "Yes"
+msgstr "Ja"
+
+#: ../../../../../../common/plugins/funding/classes/Admin.php:631
+#, php-format
+msgid "You can use: %s"
+msgstr "Sie können verwenden: %s"
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:305
+msgid "Your city is required"
+msgstr "Wohnort erforderlich"
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:295
+msgid "Your company name is required"
+msgstr "Unternehmensname erforderlich"
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:315
+msgid "Your country is required"
+msgstr "Land erforderlich"
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:276
+msgid "Your email address is required"
+msgstr "Email Adresse erforderlich"
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:271
+msgid "Your name is required"
+msgstr "Name erforderlich"
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:290
+msgid "Your phone number is required"
+msgstr "Telefonnummer erforderlich"
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:300
+msgid "Your street is required"
+msgstr ""
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:310
+msgid "Your zipcode is required"
+msgstr "Postleitzahl erforderlich"
+
+#: ../../../../../../common/plugins/funding/classes/Start.php:677
+#: ../../../../../../common/plugins/funding/classes/Admin.php:277
+msgid "Zipcode"
+msgstr "Postleitzahl"
