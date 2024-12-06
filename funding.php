@@ -5,7 +5,7 @@ Description: Receive donations via Mollie or offline Payment
 Version: 3.0.0
 Author: Wobbie.nl, Thomas Gollenia
 Author URI: https://wobbie.nl
-Text Domain: doneren-met-mollie
+Text Domain: funding
 */
 
 if (!defined('ABSPATH')) {
@@ -68,6 +68,13 @@ function dmm_uninstall_database()
 if (get_option('dmm_version') != DMM_VERSION)
     $dmm->dmm_install_database();
 
-load_plugin_textdomain('funding', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' ); 
+// Load textdomain
+function funding_load_textdomain()
+{
+	load_plugin_textdomain('funding', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' ); 
+	
+}
+add_action('plugins_loaded', 'funding_load_textdomain');
+
 
 \Contexis\Funding\Blocks::init($dmm);
